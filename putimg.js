@@ -12,7 +12,7 @@ https.get("https://graph.facebook.com/v1.0/204098339714284/photos?type=uploaded&
     for(var i=0;i<photos.data.length;i++) {
       var photo = photos.data[i];
       console.log(photo.id);
-      count++;
+      ++count;
       downloadImage(photo.id, photo.source);
     }
     console.log(count);
